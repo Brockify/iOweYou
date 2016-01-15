@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/oldPinEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:password="false"
+        android:inputType="numberPassword"
+        android:hint="Old Pin"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/newPinEditText"
+        android:background="#ffffff"
+        android:singleLine="true"
+        android:password="false"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/oldPinEditText"
+        android:layout_alignLeft="@+id/oldPinEditText"
+        android:layout_alignStart="@+id/oldPinEditText"
+        android:layout_alignRight="@+id/oldPinEditText"
+        android:layout_alignEnd="@+id/oldPinEditText"
+        android:gravity="center"
+        android:hint="New Pin"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Pin"
+        android:id="@+id/resetPinButton"
+        android:layout_below="@+id/newPinEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

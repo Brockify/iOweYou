@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/friendUsernameEditText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:hint="Friend Username"
+        android:gravity="center"
+        android:singleLine="true"
+        android:focusable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/amountEditText"
+        android:background="#ffffff"
+        android:hint="Amount"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_below="@+id/friendUsernameEditText"
+        android:layout_alignRight="@+id/friendUsernameEditText"
+        android:layout_alignEnd="@+id/friendUsernameEditText"
+        android:layout_alignLeft="@+id/friendUsernameEditText"
+        android:layout_alignStart="@+id/friendUsernameEditText"
+        android:layout_marginTop="10dp"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:id="@+id/payButton"
+        android:layout_below="@+id/amountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#85bb65"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>
