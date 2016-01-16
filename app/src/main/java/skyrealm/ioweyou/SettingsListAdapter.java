@@ -1,6 +1,7 @@
 package skyrealm.ioweyou;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,8 +21,13 @@ public class SettingsListAdapter extends BaseAdapter {
     {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         settings = new ArrayList<String>();
+        settings.add("Account Settings");
         settings.add("Reset Password");
         settings.add("Reset Pin");
+        settings.add("Banks & Cards");
+        settings.add("Add Card");
+        settings.add("Add Bank Account");
+
     }
     @Override
     public int getCount() {
@@ -49,6 +55,13 @@ public class SettingsListAdapter extends BaseAdapter {
         Holder holder = new Holder();
         holder.settingTextView = (TextView) rowView.findViewById(R.id.settingTextView);
         holder.settingTextView.setText(settings.get(position));
+
+        //make Banks & Cards a header
+        if(position == 0 || position == 3)
+        {
+            holder.settingTextView.setTextSize(25);
+            holder.settingTextView.setTypeface(null, Typeface.BOLD);
+        }
 
         return rowView;
     }

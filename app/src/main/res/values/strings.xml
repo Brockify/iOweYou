@@ -7,4 +7,6 @@
     <string name="action_settings">Settings</string>
     <string name="action_logout">Logout</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="plaid_client_id">569977e0a4ce3935462bb5fb</string>
+    <string name="plaid_secret">79a1809d8ebb5d69e8d35b0a37ee9d</string>
 </resources>
